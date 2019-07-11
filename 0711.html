@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3 operation</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        .wrapper {
+            margin: 0 auto;
+            max-width: 960px;
+        }
+
+        a,
+        a:link {
+            color: #7a7a7a;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .d-Flex {
+            display: flex;
+        }
+
+        .main_nav {
+            min-height: 30px;
+            padding: 0px;
+            /* background: lavender; */
+        }
+
+        .main_nav .l-d-Flex {
+            justify-content: flex-start;
+        }
+
+        .main_nav .flex-grow {
+            flex-grow: 1;
+        }
+
+        .flex-grow,
+        .r-d-Flex {
+            align-items: center;
+        }
+
+        .flex-grow a {
+            padding: 10px;
+        }
+
+        .r-d-Flex a {
+            padding: 5px;
+        }
+
+        .logo {
+            height: 48px;
+            margin: auto;
+        }
+
+        .bg_pic {
+            background: url(images/138974.jpg) no-repeat center center fixed;
+            min-height: 600px;
+            background-size: cover;
+            width: 100%;
+            position: relative;
+            flex-direction: column;
+            text-align: center;
+            z-index: 13;
+        }
+
+        .theme {
+            width: 100%;
+            min-height: 450px;
+            color: #fff;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* opacity: 1; */
+            z-index: 15;
+        }
+        .theme_blank{
+            width: 100%;
+            min-height: 450px;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: .5;
+            z-index: 12;
+        }
+
+
+        .theme_b {
+            margin: 0;
+        }
+
+        .theme_t {
+            flex-direction: column;
+        }
+
+
+
+        .bg_pic_black {
+            width: 100%;
+            min-height: 150px;
+            background: #000;
+            position: absolute;
+            bottom: 0;
+            z-index: 3;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .bg_icon {
+            width: 100%;
+            color: #fff;
+            justify-content: space-around;
+        }
+
+        .bg_icon h4 {
+            margin: 0;
+            text-align: center;
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+        }
+
+        .logo_icon_gFFF {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+        }
+
+
+        .box {
+            width: 400px;
+            max-height: 40px;
+            border: 2px solid rgb(248, 136, 192);
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.774);
+        }
+
+        .btn-search {
+            background: rgb(248, 136, 192);
+            /* border-radius: 0; */
+            color: #fff;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #1c1c1c;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 25px;
+        }
+
+        .btn-search p {
+            margin: 0;
+            padding: 1px;
+        }
+
+        .btn-search a {
+            text-align: center;
+            padding: 1px;
+        }
+
+        .form-control {
+            background: rgba(0, 0, 0, 0.253);
+            min-height: 30px;
+            border: none;
+            color: #fff;
+            text-align: left;
+            margin-right: 6px;
+        }
+
+        .btn-search:link,
+        .btn-search:visited {
+            color: #fff;
+        }
+
+        .btn-search:active,
+        .btn-search:hover {
+            background: rgb(255, 76, 165);
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .span {
+            padding: 0px 6px 26px;
+            margin-left: 8px;
+            margin-right: -14px;
+            border-left: 2px solid rgb(248, 136, 192);
+        }
+
+        .st1,
+        .input-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .st1 {
+            flex-grow: 1;
+        }
+
+        .re {
+            width: 22px;
+            height: 22px;
+        }
+
+        /* ---------------------- */
+        /* 文字加底線置中 */
+        .hr_scwa {
+            border: 1.5px solid #000000;
+            width: 22px;
+            margin: 0 auto;
+        }
+
+        .hotnews {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+
+        /* ---------------------- */
+
+        .box1 {
+            max-width: 190px;
+            min-height: 300px;
+            position: relative;
+        }
+
+        .box1 img {
+            width: 100%;
+            min-height: 300px;
+            background-size: cover;
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        .box1_box {
+            position: absolute;
+            min-width: 120px;
+            min-height: 22px;
+            color: rgb(218, 77, 77);
+            border: 2px solid rgb(250, 138, 138);
+            background: rgba(255, 255, 255, 0.87);
+            text-align: center;
+            opacity: .7;
+            right: -10px;
+            bottom: 30px;
+        }
+
+        .box1_box h4 {
+            margin: auto 0;
+        }
+
+        .box2 {
+            max-width: 270px;
+            max-height: 180px;
+            position: relative;
+            
+        }
+
+        .box2::after{
+            content: "";
+            width: 270px;
+            height: 180px;
+            background: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+        }
+
+        .box2_box {
+            position: absolute;
+            left: 12%;
+            bottom: 50%;
+        }
+
+        .box2_box h4 {
+            margin: 0;
+            color: rgb(255, 255, 255);
+            text-shadow: 3px 3px 4px rgb(0, 0, 0) ;
+        }
+
+        .box2 img {
+            width: 100%;
+            max-height: 180px;
+            background-size: cover;
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        .flex_box {
+            margin-top: 10px;
+            justify-content: space-between;
+        }
+
+        .a_self {
+            position: relative;
+        }
+
+        .more {
+            position: absolute;
+            right: 0;
+        }
+
+        .box_more {
+            max-width: 50px;
+            background: rgb(250, 63, 156);
+            text-align: center;
+            padding: 3px;
+        }
+
+        .box_more a {
+            color: #fff;
+        }
+
+        .box_more a:hover {
+            text-decoration: none;
+        }
+
+        .box_more a h5 {
+            margin: 0;
+            margin-top: 2px;
+        }
+
+        .pic_content {
+            margin: 0 auto;
+            max-width: 850px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="main_nav wrapper">
+        <section class="d-Flex l-d-Flex">
+            <a href="" style="margin-top: 3px;"> <img class="logo" src="pics_1129/logo.png" alt=""></a>
+            <div class="flex-grow d-Flex">
+                <a href="">找髮型</a>
+                <a href="">找設計師</a>
+                <a href="">美髮誌</a>
+            </div>
+            <div class="d-Flex r-d-Flex">
+                <a href="">註冊</a>
+                <a href="">登入</a>
+                <a href="">
+                    <img class="logo" src="pics_1129/setting.png" alt="">
+                </a>
+            </div>
+            </div>
+        </section>
+    </nav>
+
+    <section>
+        <header class="wrapper">
+            <figure class="wrapper">
+                <div class="bg_pic">
+                    <div class="theme">
+                        <div class="theme_blank"></div>
+                        <div class="theme_t d-Flex">
+                            <img class="logo_icon_gFFF d-Flex" src="images/logo_icon_gFFF.svg" alt="">
+                            <h1>煩惱髮型嗎</h1>
+                            <h4>給你最多髮型靈感及在地優秀設計師</h4>
+                        </div>
+                        <!-- 表單 -->
+                        <div class="theme_b box d-Flex">
+
+                            <div class="st1">
+                                <img src="pics_1129/icon_searchbar_location.png" alt="">
+                                <label for="" class="title"></label>
+                                <select name="add1" id="">
+                                    <option value="1">找地區</option>
+                                    <option value="2">臺北市</option>
+                                    <option value="3">基隆市</option>
+                                    <option value="4">新北市</option>
+                                    <option value="5">桃園縣</option>
+                                    <option value="6">新竹縣</option>
+                                    <option value="7">苗栗縣</option>
+                                    <option value="8">臺中縣</option>
+                                    <option value="9">彰化縣</option>
+                                    <option value="10">臺南縣</option>
+                                    <option value="11">嘉義縣</option>
+                                    <option value="12">高雄縣</option>
+                                    <option value="13">屏東縣</option>
+                                    <option value="14">宜蘭縣</option>
+                                    <option value="15">花蓮縣</option>
+                                    <option value="16">臺東縣</option>
+                                </select>
+
+                                <div class="span"></div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="&emsp;搜尋髮型主題">
+                                    <span class="input-group-btn d-Flex">
+                                        <a href="" class="btn btn-search d-Flex" type="button">
+                                            <img class="re" src="pics_1129/icon_searchbar_search.png" alt="">
+                                            <p>找找看</p>
+                                            <!-- <div> 
+                                            <i class="fa fa-search fa-fw"></i>
+                                        </div> -->
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="bg_pic_black d-Flex">
+                        <div class="bg_icon d-Flex">
+                            <div><img class="icon" src="pics_1129/icon_search.svg" alt="">
+                                <h4>在地設計師作品<br>輕鬆找</h4>
+                            </div>
+                            <div><img class="icon" src="pics_1129/icon_fashion.svg" alt="">
+                                <h4>流行髮型<br>一手掌握</h4>
+                            </div>
+                            <div><img class="icon" src="pics_1129/icon_book.svg" alt="">
+                                <h4>即時溝通預約</h4>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </figure>
+        </header>
+    </section>
+
+    <section class="wrapper">
+        <div class="header_content">
+            <div class="pic_content">
+                <!-- ------------ -->
+                <!-- 文字+底線 -->
+
+                <div class="">
+                    <h2 class=" hotnews">熱門主題</h2>
+                    <div>
+                        <hr class="hr_scwa">
+                    </div>
+                </div>
+                <!-- ------------ -->
+
+                <div class="d-Flex flex_box">
+
+                    <div class="box1">
+                        <img src="images/9344.jpg" alt="">
+                        <div class="box1_box">
+                            <h4>長捲</h4>
+                        </div>
+                    </div>
+                    <div class="box1">
+                        <img src="images/9345.jpg" alt="">
+                        <div class="box1_box">
+                            <h4>短褐</h4>
+                        </div>
+                    </div>
+                    <div class="box1">
+                        <img src="images/9346.jpg" alt="">
+                        <div class="box1_box">
+                            <h4>橘染</h4>
+                        </div>
+                    </div>
+                    <div class="box1">
+                        <img src="images/9347.jpg" alt="">
+                        <div class="box1_box">
+                            <h4>短捲</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-Flex a_self">
+                    <div class="more d-Flex">
+                        <div class="box_more d-Flex">
+                            <a href="">
+                                <h5>more</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <h2 class=" hotnews">趨勢話題</h2>
+                    <div>
+                        <hr class="hr_scwa">
+                    </div>
+                </div>
+
+                <div class="d-Flex flex_box">
+
+                    <div class="box2">
+                        <img src="images/9344.jpg" alt="">
+                        <div class="box2_box">
+                            <h4>鬆軟的劉海！配上極致的捲度</h4>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <img src="images/9345.jpg" alt="">
+                        <div class="box2_box">
+                            <h4>日系鬆鬆捲度吹乾即可霧面</h4>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <img src="images/9346.jpg" alt="">
+                        <div class="box2_box">
+                            <h4>新寵，括號瀏海跟瘋了嗎？</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-Flex a_self">
+                    <div class="more d-Flex">
+                        <div class="box_more d-Flex">
+                            <a href="">
+                                <h5>more</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
