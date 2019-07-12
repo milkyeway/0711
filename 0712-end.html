@@ -292,11 +292,14 @@
             opacity: 0.6;
         }
 
+        .box2:hover {
+            transform: translate(5px, -5px);
+        }
+
         .box2:hover,
         .box2::after {
             transition: .5s;
             opacity: 1;
-
         }
 
         .box2::after {
@@ -324,8 +327,15 @@
 
         .box2 img {
             width: 100%;
-
-            height: 100%;
+            max-height: 180px;
+            background-size: cover;
+            overflow: hidden;
+            object-fit: cover;
+            opacity: 0.9;
+        }
+        .box2::after img {
+            width: 100%;
+            max-height: 180px;
             background-size: cover;
             overflow: hidden;
             object-fit: cover;
@@ -379,8 +389,8 @@
         }
 
         /* -----------底層區塊----------- */
-        .footer{
-            margin-top: 80px;   
+        .footer {
+            margin-top: 80px;
         }
 
         .main_top {
@@ -397,7 +407,7 @@
 
 
 
-        .figure_all{
+        .figure_all {
             margin: 0 auto;
         }
 
@@ -405,7 +415,7 @@
         .main_1 .figure_pic {
             max-width: 200px;
             min-height: 200px;
-            
+
         }
 
         .main_1 .figure_img {
@@ -445,9 +455,7 @@
             color: rgb(206, 114, 149);
         }
 
-        .figure_all .figure_pic .hotnews{
-
-        }
+        .figure_all .figure_pic .hotnews {}
 
         /* -----------區塊二----------- */
         .main_2 {
@@ -466,6 +474,7 @@
         .main_3 {
             min-height: 200px;
         }
+
         /* ---------------------- */
         /* ---------------------- */
         /* ---------------------- */
@@ -636,25 +645,31 @@
                 </div>
 
                 <div class="d-Flex flex_box">
+                    <a href="">
+                        <div class="box2">
+                            <img src="images/9350.jpg" alt="">
+                            <div class="box2_box">
+                                <h4>鬆軟的劉海！配上極致的捲度</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="box2">
+                            <img src="images/9351.jpg" alt="">
+                            <div class="box2_box">
+                                <h4>鬆軟的劉海！配上極致的捲度</h4>
+                            </div>
+                        </div>
+                    </a>
 
-                    <div class="box2">
-                        <img src="images/9350.jpg" alt="">
-                        <div class="box2_box">
-                            <h4>鬆軟的劉海！配上極致的捲度</h4>
+                    <a href="">
+                        <div class="box2">
+                            <img src="images/9344.jpg" alt="">
+                            <div class="box2_box">
+                                <h4>鬆軟的劉海！配上極致的捲度</h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="box2">
-                        <img src="images/9345.jpg" alt="">
-                        <div class="box2_box">
-                            <h4>日系鬆鬆捲度吹乾即可霧面</h4>
-                        </div>
-                    </div>
-                    <div class="box2">
-                        <img src="images/9351.jpg" alt="">
-                        <div class="box2_box">
-                            <h4>新寵，括號瀏海跟瘋了嗎？</h4>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="d-Flex a_self_b">
                     <div class="more d-Flex">
