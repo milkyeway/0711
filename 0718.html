@@ -414,7 +414,7 @@
         .main_Block {
             width: 100%;
             max-height: 200px;
-            background: rgb(231, 231, 231);
+            background: rgb(209, 209, 209);
         }
 
         /* -----------區塊一----------- */
@@ -469,18 +469,76 @@
             color: rgb(206, 114, 149);
         }
 
-        .figure_all .figure_pic .hotnews {}
+
 
         /* -----------區塊二----------- */
+        .booder_fff {
+            height: 85px;
+            border-left: 1px dotted #fff;
+            margin: 10px 40px 0px 40px;
+        }
+
         .main_2 {
             width: 100%;
             min-height: 200px;
-            background: url(images/slide1.jpg) no-repeat;
+            background: url(images/slide1_blurry1.jpg) no-repeat;
             background-position: 70% 40%;
             box-sizing: cover;
             overflow: hidden;
-            -webkit-filter: blur(2px);
+            position: relative;
+        }
 
+        .main_2 .main_2_box_blankBG {
+            content: "";
+            width: 100%;
+            min-height: 200px;
+            background: rgba(0, 0, 0, 0.377);
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+
+        .main_2_top_all_box {
+            max-height: 140px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .main_2_left_box {
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .main_2_left_box .h4_1 {
+            color: rgba(255, 255, 255, 0.596);
+            margin: 0;
+        }
+
+        .main_2_left_box .digital {
+            font-size: 60px;
+            color: #fff;
+        }
+
+        .mg_l {
+            margin-right: 40px;
+        }
+
+        .mg_r {
+            margin-left: 40px;
+        }
+
+        .main_2_bottom {
+            max-height: 95px;
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+        }
+
+        .main_2_bottom .text_border{
+            width: 10px;
+            border-bottom: 2px solid #fff;
         }
 
 
@@ -513,6 +571,11 @@
         }
 
         /* 區塊三之一右 */
+
+        .Bottom_layer1_2_ul li h5{
+            letter-spacing: 2px;
+            margin-left: 2px;
+        }
 
         .Bottom_layer1_2 {
             padding: 5px;
@@ -814,14 +877,22 @@
                 </div>
             </div>
             <div class="main_2">
-                <div class="">
-
-                </div>
-                <div class="">
-
-                </div>
-                <div class="">
-
+                <div class="main_2_box_blankBG">
+                    <div class="main_2_top_all_box d-Flex">
+                        <div class="main_2_left_box d-Flex mg_l">
+                            <h4 class="h4_1">已有</h4>
+                            <div class="digital">635</div>
+                            <h4 class="h4_1">位設計師</h4>
+                        </div>
+                        <div class="booder_fff"></div>
+                        <div class="main_2_right_box">
+                            <div class="main_2_left_box d-Flex mg_r">
+                                <h4 class="h4_1">發表</h4>
+                                <div class="digital">6421</div>
+                                <h4 class="h4_1">張髮型作品</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="main_3 main_Block ">
