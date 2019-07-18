@@ -13,6 +13,10 @@
             max-width: 960px;
         }
 
+        .out_line {
+            outline: none;
+        }
+
         a,
         a:link {
             color: #7a7a7a;
@@ -409,7 +413,7 @@
         .main_Block {
             width: 100%;
             max-height: 200px;
-            background: rgb(201, 201, 201);
+            background: rgb(231, 231, 231);
         }
 
         /* -----------區塊一----------- */
@@ -482,10 +486,20 @@
         /* -----------區塊三---------- */
         .main_3 {
             min-height: 200px;
+
         }
+
+        .Bottom_layer1 {
+            justify-content: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
         /* 區塊三之一左 */
         .Bottom_layer1_1 h5 {
             margin: 0;
+            color: rgb(78, 78, 78);
+            padding: 10px;
         }
 
         .Bottom_layer1_1 img {
@@ -493,31 +507,71 @@
             min-height: 30px;
         }
 
-        .Bottom_layer1_1_1{
+        .Bottom_layer1_1_1 {
             max-width: 400px;
         }
 
         /* 區塊三之一右 */
 
-        .Bottom_layer1_2 ul{
+        .Bottom_layer1_2 {
+            padding: 5px;
+        }
+
+        .Bottom_layer1_2 ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
 
-        .Bottom_layer1_2 li {
-            display: inline-block;
+        .Bottom_layer1_2 li h5 {
+            display: block;
+            margin: 0;
+            max-height: 25px;
+            font-size: 15px;
         }
 
-        .Bottom_layer1_2 ul li img{
-            max-width: 15px;
-            max-height: 15px;
+        /* 強迫文字不換行 */
+        .white-space {
+            white-space: nowrap;
         }
+
+        .Bottom_layer1_2 li {
+            max-height: 26px;
+            justify-items: center;
+            align-items: center;
+
+        }
+
+        .Bottom_layer1_2 ul li img {
+            max-width: 20px;
+            max-height: 20px;
+        }
+
+        /* 區塊右之圖片 */
+
+        .Bottom_layer1_2_pic_all {
+            position: relative;
+        }
+
+        .Bottom_layer1_2_pic_text {
+            max-width: 135px;
+            max-height: 40px;
+            position: absolute;
+            top: 25%;
+            right: 15%;
+        }
+        .Bottom_layer1_2_pic_text h5{
+            margin: 0;
+            color: rgb(206, 114, 149);
+        }
+
         /* ---------------------- */
         .Bottom_layer2_1 {
             border: 1px dotted rgb(116, 114, 114);
-            width: 80%;
-            margin: 0 auto;
+            width: 85%;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         /* ---------------------- */
@@ -570,7 +624,7 @@
                                 <div class="st1">
                                     <img src="pics_1129/icon_searchbar_location.png" alt="">
                                     <label for="" class="title"></label>
-                                    <select class="acceptAlarm" name="acceptAlarm" id="">
+                                    <select class="acceptAlarm out_line" name="acceptAlarm" id="">
                                         <option value="" disabled selected hidden>找地區</option>
                                         <option value="1">臺北市</option>
                                         <option value="2">基隆市</option>
@@ -591,7 +645,7 @@
 
                                     <div class="span"></div>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="&emsp;搜尋髮型主題">
+                                        <input type="text" class="form-control out_line" placeholder="&emsp;搜尋髮型主題">
                                         <span class="input-group-btn d-Flex">
                                             <a href="" class="btn btn-search d-Flex" type="button">
                                                 <img class="re" src="pics_1129/icon_searchbar_search.png" alt="">
@@ -769,9 +823,9 @@
 
                 </div>
             </div>
-            <div class="main_3 main_Block">
+            <div class="main_3 main_Block ">
                 <!-- 底區上資訊 -->
-                <div class="Bottom_layer1">
+                <div class="Bottom_layer1 d-Flex">
                     <!-- 左邊 -->
                     <div class="Bottom_layer1_1">
                         <div class="d-Flex Bottom_layer1_1_1">
@@ -780,17 +834,34 @@
                         </div>
                     </div>
                     <!-- 右邊 -->
-                    <div class="Bottom_layer1_2 ">
-                        <ul>
-                            <li><img src="images/email.svg" alt=""><span>聯絡我們</span></li>
-                            <li><img src="images/ios.svg" alt=""><span>IOS</span></li>
+                    <div class="Bottom_layer1_2 d-Flex">
+                        <ul class="Bottom_layer1_2_ul">
+                            <li class="d-Flex white-space"><img src="images/email.svg" alt="">
+                                <h5>聯絡我們</h5>
+                            </li>
+                            <li class="d-Flex white-space"><img src="images/facebook_g.svg" alt="">
+                                <h5>粉絲專業</h5>
+                            </li>
                         </ul>
-                        <ul>
-                            <li><img src="images/facebook_g.svg" alt=""><span>粉絲專業</span></li> 
-                            <li><img src="images/android.svg" alt=""><span>Android</span></li>
+                        <ul class=>
+                            <li class="d-Flex"><img src="images/ios.svg" alt="">
+                                <h5>IOS</h5>
+                            </li>
+                            <li class="d-Flex"><img src="images/android.svg" alt="">
+                                <h5>Android</h5>
+                            </li>
                         </ul>
                         <!-- 要做按鈕效果 圖裡文字 -->
-                        <div class="Bottom_layer1_2_pic d-Flex"><a href=""><img src="pics_1129/btn_join.png" alt=""></a></div>                        
+                        <div class="Bottom_layer1_2_pic d-Flex">
+                            <a href="" class="">
+                                <div class="Bottom_layer1_2_pic_all">
+                                    <div class="Bottom_layer1_2_pic_pic"><img src="pics_1129/btn_join.png" alt=""></div>
+                                    <div class="Bottom_layer1_2_pic_text">
+                                        <h5>設計師加入</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!-- 虛線條區塊 -->
